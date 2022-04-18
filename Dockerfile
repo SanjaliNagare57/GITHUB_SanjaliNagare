@@ -1,2 +1,3 @@
-FROM nginx
-WORKDIR COPY build /usr/app
+FROM alpine
+
+RUN echo "Hello world!"
