@@ -33,11 +33,11 @@ jobs:
         with:
           context: .
           load: true
-          tags: ${{ env.TEST_TAG }}
+          tags: ${{ env.TEST_1 }}
       -
         name: Test
         run: |
-          docker run --rm ${{ env.TEST_TAG }}
+          docker run --rm ${{ env.TEST_1 }}
       -
         name: Build and push
         uses: docker/build-push-action@v2
